@@ -1,0 +1,9 @@
+package model;
+
+public class Articulo {
+	private Integer id;
+	private String nombre;
+	private Double precio;
+	
+
+}

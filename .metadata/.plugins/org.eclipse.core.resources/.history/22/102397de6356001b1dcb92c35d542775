@@ -1,0 +1,71 @@
+package ejercicios;
+
+public class Perro {
+	//los atributos se ponen privados
+	//los getters y setters publicos
+	private String nombre;
+	private String raza;
+	private Integer edad;
+	private Boolean estaVacunado;
+	
+	public Perro(String n, String r, Integer e, Boolean ev) {
+		this.nombre=n;
+		this.raza=r;
+		this.edad=e;
+		this.estaVacunado=ev;
+	}
+	
+	public void ladrar() {
+		System.out.println("Soy un "+this.getRaza()+" GUA GUA GUA GUA");
+	}
+	public void vacunar() {
+		this.setEstaVacunado(true);
+	}
+	
+	//getters: son metodos publicos sobre atributos privados, devuelven
+	//un atributo de la clase pojo en concreto
+	public String getRaza() {
+		return this.raza;
+	}
+	public void setRaza(String raza) {
+		this.raza=raza;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Integer getEdad() {
+		return edad;
+	}
+
+	public void setEdad(Integer edad) {
+		this.edad = edad;
+	}
+
+	public Boolean getEstaVacunado() {
+		return estaVacunado;
+	}
+
+	public void setEstaVacunado(Boolean ev) {
+		this.estaVacunado=ev;
+		/*
+		 * this.atributo == atributo
+		 */
+	}
+	
+	public String toString() {
+		return "Nombre="+this.nombre+", Raza="+this.raza+", Edad="+this.edad
+				+"¿Esta vacunado? "+this.estaVacunado;
+	}
+	
+	
+	
+	
+	
+
+}

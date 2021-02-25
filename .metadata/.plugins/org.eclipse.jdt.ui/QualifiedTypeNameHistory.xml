@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="utils.Teclado"/>
+    <fullyQualifiedTypeName name="java.time.Year"/>
+    <fullyQualifiedTypeName name="util.Teclado"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="Principal.Perro"/>
+    <fullyQualifiedTypeName name="Principal.AnimalInterfaz"/>
+    <fullyQualifiedTypeName name="interfaces.FiguraInterfaz"/>
+    <fullyQualifiedTypeName name="modelos.Figura"/>
+    <fullyQualifiedTypeName name="modelos.Triangulo"/>
+    <fullyQualifiedTypeName name="modelos.Rombo"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

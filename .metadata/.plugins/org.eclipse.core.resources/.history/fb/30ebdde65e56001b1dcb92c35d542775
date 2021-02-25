@@ -1,0 +1,11 @@
+package ejercicios;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//nombre de la clase pojo, nombre de la var, new Perro(atributos);
+	}
+
+}

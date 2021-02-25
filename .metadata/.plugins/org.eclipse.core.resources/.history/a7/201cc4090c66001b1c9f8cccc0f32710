@@ -1,0 +1,28 @@
+package Principal;
+
+import util.Teclado;
+
+public class MainMenu {
+	public static void main(String[] args) {
+		final String  MENU = "INTRODUZCA UN NUMERO MANCO";
+		Integer opcion = Teclado.leerInt(MENU);
+		switch(opcion) {
+		case 1:
+			System.out.println("ABRIR");
+			break;
+		case 2:
+			System.out.println("Cerrar");
+			break;
+		case 3:
+			System.out.println("Modificar");
+			break;
+			
+		case 4:
+			System.out.println("Salir");
+			break;
+		default:
+			System.out.println("Opción incorrecta.");
+			
+		}
+	}
+}

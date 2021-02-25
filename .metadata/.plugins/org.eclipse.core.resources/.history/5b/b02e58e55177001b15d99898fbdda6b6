@@ -1,0 +1,104 @@
+package model;
+
+import java.util.Arrays;
+import java.util.Date;
+
+public class Cliente {
+
+	private String nombre;
+	private Double saldo;
+	private Articulo historialArticulos[];
+	private Date historialFechas[];
+	private Articulo carrito[];
+	private Integer tamanioCarrito;
+	private Integer tamanioHistorial;
+
+	public Cliente() {
+		super();
+	}
+
+	public Cliente(String nombre, Double saldo, Articulo[] historialArticulos, Date[] historialFechas,
+			Articulo[] carrito, Integer tamanioCarrito, Integer tamanioHistorial) {
+		super();
+		this.nombre = nombre;
+		this.saldo = saldo;
+		this.historialArticulos = historialArticulos;
+		this.historialFechas = historialFechas;
+		this.carrito = carrito;
+		this.tamanioCarrito = tamanioCarrito;
+		this.tamanioHistorial = tamanioHistorial;
+	}
+
+	public Cliente(String name, int saldo) {
+		this.nombre = name;
+		this.saldo = (double) saldo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+
+	public Articulo[] getHistorialArticulos() {
+		return historialArticulos;
+	}
+
+	public void setHistorialArticulos(Articulo[] historialArticulos) {
+		this.historialArticulos = historialArticulos;
+	}
+
+	public Date[] getHistorialFechas() {
+		return historialFechas;
+	}
+
+	public void setHistorialFechas(Date[] historialFechas) {
+		this.historialFechas = historialFechas;
+	}
+
+	public Articulo[] getCarrito() {
+		return carrito;
+	}
+
+	public void setCarrito(Articulo[] carrito) {
+		this.carrito = carrito;
+	}
+
+	public Integer getTamanioCarrito() {
+		return tamanioCarrito;
+	}
+
+	public void setTamanioCarrito(Integer tamanioCarrito) {
+		this.tamanioCarrito = tamanioCarrito;
+	}
+
+	public Integer getTamanioHistorial() {
+		return tamanioHistorial;
+	}
+
+	public void setTamanioHistorial(Integer tamanioHistorial) {
+		this.tamanioHistorial = tamanioHistorial;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nombre=" + nombre + ", saldo=" + saldo + ", historialArticulos="
+				+ Arrays.toString(historialArticulos) + ", historialFechas=" + Arrays.toString(historialFechas)
+				+ ", carrito=" + Arrays.toString(carrito) + ", tamanioCarrito=" + tamanioCarrito + ", tamanioHistorial="
+				+ tamanioHistorial + "]";
+	}
+	public void mostrarSaldo() {
+		System.out.println("Mi saldo es de : "+this.getSaldo()+" euros.");
+	}
+
+}

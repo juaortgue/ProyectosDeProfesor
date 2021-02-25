@@ -1,0 +1,11 @@
+package model;
+
+public class Tienda {
+	private Articulo articulos[];
+	private Integer cantidades[];
+	private Cliente clientes[];
+	private Integer numArticulos;
+	private Integer numClientes;
+	
+
+}

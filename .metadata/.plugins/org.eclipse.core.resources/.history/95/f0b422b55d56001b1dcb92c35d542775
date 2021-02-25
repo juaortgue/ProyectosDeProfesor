@@ -1,0 +1,22 @@
+package ejercicios;
+
+public class Perro {
+	//los atributos se ponen privados
+	//los getters y setters publicos
+	private String nombre;
+	private String raza;
+	private Integer edad;
+	private Boolean estaVacunado;
+	
+	//getters: son metodos publicos sobre atributos privados, devuelven
+	//un atributo de la clase pojo en concreto
+	public String getRaza() {
+		return this.raza;
+	}
+	public void setRaza(String raza) {
+		this.raza=raza;
+	}
+	
+	
+
+}

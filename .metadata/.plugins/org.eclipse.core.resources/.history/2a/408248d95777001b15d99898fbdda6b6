@@ -1,0 +1,15 @@
+package app;
+
+import model.Movil;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Movil m1 = new Movil(8755656);
+		
+		m1.consultarNumero();
+
+	}
+
+}

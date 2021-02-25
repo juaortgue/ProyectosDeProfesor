@@ -1,0 +1,15 @@
+package ejemplo;
+
+import util.Teclado;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double resultado = Teclado.leerDouble("Introduzca su peso:");
+		System.out.println("Pesas: "+resultado);
+		int edad = Teclado.leerInt("Introduzca su edad: ");
+		System.out.println("Su edad es de: "+edad);
+	}
+
+}

@@ -1,0 +1,66 @@
+package ejercicios;
+
+import utils.Teclado;
+
+public class Clase1Diciembre {
+
+	public static void main(String[] args) {
+int opcion = 0;
+		
+
+		do {
+			mostrarMenu();
+			opcion = Teclado.leerInt("Introduzca el numero: ");
+			switch (opcion) {
+			case 0:
+				System.out.println("adios");
+				break;
+			case 1:
+				esPrimo();
+				break;
+			case 2:
+				campanadas();
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+			default:
+				System.out.println("Error");
+			}
+		} while (opcion != 0);
+
+	}
+	public static void mostrarMenu() {
+		System.out.println("MENU");
+		System.out.println("0. Salir");
+		System.out.println("1. Es primo");
+		System.out.println("2 campanadas ");
+		
+	
+	}
+	public static void esPrimo() {
+		boolean esP = true;
+		int a = Teclado.leerInt("Introduzca numero para saber si es primo:");
+		for(int i=2;i<a;i++) {
+			if(a%i==0) {//SI ES DIVISIBLE ENTRE CUALQUIER NUMERO ANTERIOR AL INTRODUCIDO QUE NO SEA EL 1 Y EL MISMO
+				//SIGNIFICA QUE NO ES PRIMO
+				esP=false;
+				break;//HACE QUE EL BUCLE SE CORTE
+			}
+		}
+		if(esP) {
+			System.out.println("Es primo");
+		}else {
+			System.out.println("No es primo");
+		}
+	}
+	public static void campanadas() {
+		int horaIntroducida = Teclado.leerInt("Deme la hora:");
+		
+		
+	}
+
+}

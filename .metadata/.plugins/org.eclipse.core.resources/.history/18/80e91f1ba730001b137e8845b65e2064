@@ -1,0 +1,51 @@
+package ejercicios;
+
+import utils.Teclado;
+
+public class Examen {
+
+	public static void main(String[] args) {
+		final String pregunta = "INTRODUZCA:\n1. Para saludar\n2.Para saltar.\n3. para salir.";
+		int opcion = 0;
+		/*
+		 * El switch es un menu que evalua un numero, cada caso es una opcion, tambien
+		 * existe el caso por defecto que sirve por si el usuario introduce una opcion
+		 * equivocada.
+		 */
+		/*
+		 * El do while se usa para que se repitan los menus siempre se mete dentro del
+		 * do sin condicion alguna, la unica diferencia con un while es que la condicion
+		 * se evalua al final del todo, para que podamos leer la opcion antes de
+		 * evaluarla
+		 */
+
+		do {
+			mostrarMenu();
+			opcion = Teclado.leerInt("");
+
+			switch (opcion) {
+			case 0:
+				salir();
+				break;
+			case 1:// definimos el caso 1
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:// si el numero no coincide con e de los casos, se mete en default (es como un
+					// else)
+				System.out.println("Numero erroneo, intentelo de nuevo");
+			}
+		} while (opcion != 3);
+	}
+	
+	public static void salir() {
+		System.out.println("Has salido del menú.");
+	}
+	public static void mostrarMenu() {
+		
+		System.out.println("0. Salir\n1.Es multiplo\n2.Tabla\n3.Campanadas");
+	}
+
+}

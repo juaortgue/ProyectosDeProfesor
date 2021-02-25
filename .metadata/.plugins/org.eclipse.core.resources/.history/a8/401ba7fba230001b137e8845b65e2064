@@ -1,0 +1,29 @@
+package ejercicios;
+
+import utils.Teclado;
+
+public class Examen {
+
+	public static void main(String[] args) {
+		final String pregunta = "INTRODUZCA:\n1. Para saludar\n2.Para saltar.\n3. para salir.";
+		int opcion = Teclado.leerInt("Introduzca un numero");
+		/*
+		 * El switch es un menu que evalua un numero, cada caso es una opcion, tambien existe el caso por defecto que 
+		 * sirve por si el usuario introduce una opcion equivocada.
+		 */
+		switch(opcion) {
+			case 1://definimos el caso 1
+				System.out.println("hola");
+			break;
+			case 2:
+				System.out.println("Estoy saltando!!");
+			case 3:
+				System.out.println("Adiossss!!!!!");
+				break;
+			default:
+				System.out.println("Numero erroneo, intentelo de nuevo");
+		}
+
+	}
+
+}

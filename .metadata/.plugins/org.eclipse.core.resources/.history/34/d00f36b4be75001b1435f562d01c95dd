@@ -1,0 +1,15 @@
+package model;
+
+import java.util.Date;
+
+public class Cliente {
+
+	private String nombre;
+	private Double saldo;
+	private Articulo historialArticulos[];
+	private Date historialFechas[];
+	private Articulo carrito[];
+	private Integer tamanioCarrito;
+	private Integer tamanioHistorial;
+	
+}

@@ -1,0 +1,60 @@
+package ejemplo;
+
+import util.Teclado;
+
+public class main {
+
+	public static void main(String[] args) {
+		//TIPOS DE VARIABLES
+		int numEntero = 1;
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+		/*double resultado = Teclado.leerDouble("Introduzca su peso:");
+		System.out.println("Pesas: "+resultado);
+		int edad = Teclado.leerInt("Introduzca su edad: ");
+		System.out.println("Su edad es de: "+edad);
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//creamos una variable para guardar lo que se lea por teclado
+		String nombre="";
+		//usamos la funcion leer que tiene la clase teclado, para leer el nombre, le tenemos que dar
+		//por parametro la pregunta a realizar por pantalla
+		Teclado.leerString("¿Cual es su edad?");
+		
+	}
+
+}

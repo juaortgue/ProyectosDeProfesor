@@ -1,0 +1,27 @@
+package Principal;
+
+public class Alumno extends Persona{
+
+	 private Double notaMedia;
+
+	public Alumno(Double notaMedia) {
+		super();//la palabra super sirve para que te cree un alumno 
+		//con los atributos de una persona
+		this.notaMedia = notaMedia;
+	}
+	
+
+	public Double getNotaMedia() {
+		return notaMedia;
+	}
+
+	public void setNotaMedia(Double notaMedia) {
+		this.notaMedia = notaMedia;
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno [notaMedia=" + notaMedia + "]";
+	}
+	 
+}

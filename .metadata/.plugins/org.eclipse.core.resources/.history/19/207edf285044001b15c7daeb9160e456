@@ -1,0 +1,43 @@
+package ejercicios;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import utils.Teclado;
+
+public class Ejercicio6 {
+
+	public static void main(String[] args) {
+		//tipos de datos primitivos
+		/*
+		 * Son parecidos a los vistos, pero en realidad
+		 * son objetos con sus funciones
+		 */
+		int n1= 0;
+		int n2 = 0;
+		Integer n3 = 0;
+		Integer n4 = 0;
+		double x1 = 0.0;
+		Double x2 = 0.0;
+		
+		if(n1==n2) {
+			System.out.println("Son iguales");
+		}
+		if(n3.equals(n4)) {
+			System.out.println("Son iguales");
+		}
+		String pregunta = "assadsad";
+		pregunta = pregunta +n3.toString();
+		
+		//crear listas
+		List<Integer> lista = new ArrayList<Integer>();
+		Integer opcion = -1;
+		do {
+			opcion=Teclado.leerInt("Introduzca todos los numeros que quiera, no va a petar!!");
+			lista.add(opcion);
+		}while(opcion!=0);
+		System.out.println(lista.toString());
+		System.out.println("POSICION 1 -->" +lista.get(1));
+	}
+
+}

@@ -1,0 +1,120 @@
+package model;
+
+import java.util.Arrays;
+
+public class Tienda {
+	private Articulo articulos[];
+	private Integer cantidades[];
+	private Cliente clientes[];
+	private Integer numArticulos;
+	private Integer numClientes;
+
+	public Tienda(Articulo[] articulos, Integer[] cantidades, Cliente[] clientes, Integer numArticulos,
+			Integer numClientes) {
+		super();
+		this.articulos = articulos;
+		this.cantidades = cantidades;
+		this.clientes = clientes;
+		this.numArticulos = numArticulos;
+		this.numClientes = numClientes;
+	}
+
+	public Tienda() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Articulo[] getArticulos() {
+		return articulos;
+	}
+
+	public void setArticulos(Articulo[] articulos) {
+		this.articulos = articulos;
+	}
+
+	public Integer[] getCantidades() {
+		return cantidades;
+	}
+
+	public void setCantidades(Integer[] cantidades) {
+		this.cantidades = cantidades;
+	}
+
+	public Cliente[] getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(Cliente[] clientes) {
+		this.clientes = clientes;
+	}
+
+	public Integer getNumArticulos() {
+		return numArticulos;
+	}
+
+	public void setNumArticulos(Integer numArticulos) {
+		this.numArticulos = numArticulos;
+	}
+
+	public Integer getNumClientes() {
+		return numClientes;
+	}
+
+	public void setNumClientes(Integer numClientes) {
+		this.numClientes = numClientes;
+	}
+
+	@Override
+	public String toString() {
+		return "Tienda [articulos=" + Arrays.toString(articulos) + ", cantidades=" + Arrays.toString(cantidades)
+				+ ", clientes=" + Arrays.toString(clientes) + ", numArticulos=" + numArticulos + ", numClientes="
+				+ numClientes + "]";
+	}
+
+	public void llenarAlmacen() {
+		/*
+		 * 1º Creamos los articulos 2º los añadimos a un array de articulos 3º el array
+		 * se lo metemos a la tienda
+		 */
+		Articulo a0 = new Articulo(0, "Cero", 10.);
+		Articulo a1 = new Articulo(1, "uno", 20.);
+		Articulo a2 = new Articulo(2, "dos", 15.);
+		Articulo a3 = new Articulo(3, "tres", 180.);
+		Articulo a4 = new Articulo(4, "cuatro", 105.);
+		Articulo a5 = new Articulo(5, "cinco", 99.);
+		Articulo arrayArticulos[] = { a0, a1, a2, a3, a4, a5 };
+		Integer arrayCantidades[] = { 12, 9, 10, 4, 1 ,2};
+		this.setArticulos(arrayArticulos);
+		this.setCantidades(arrayCantidades);
+		this.setNumArticulos(arrayArticulos.length);
+		/*
+		 * La salida de este programa debería ser la siguiente: Mostrando inventario de
+		 * la tienda: ----------------------------------------------------------- [ 0]
+		 * Articulo: Cero (ref. 0), 10.0 euros + iva Cantidad en stock: 12
+		 * ----------------------------------------------------------- [ 1] Articulo:
+		 * Uno (ref. 1), 20.0 euros + iva Cantidad en stock: 9
+		 * ----------------------------------------------------------- [ 2] Articulo:
+		 * Dos (ref. 2), 15.0 euros + iva Cantidad en stock: 10
+		 * ----------------------------------------------------------- [ 3] Articulo:
+		 * Tres (ref. 3), 180.0 euros + iva Cantidad en stock: 15
+		 * ----------------------------------------------------------- [ 4] Articulo:
+		 * Cuatro (ref. 4), 105.0 euros + iva Cantidad en stock: 4
+		 * ----------------------------------------------------------- [ 5] Articulo:
+		 * Cinco (ref. 5)
+		 * 
+		 */
+	}
+
+	public void mostrarInventario() {
+		System.out.println("Mostrando inventario de\r\n" + "		 * la tienda: ------------------------------"
+				+ "-----------------------------");
+
+		for (int i = 0; i < this.getNumArticulos(); i++) {
+			Articulo a = this.getArticulos()[i];
+			System.out.println("Artículo: " + a.getNombre() + " (ref. " + a.getId() + ") ," + a.getPrecio() + " euros, "
+					+ "stock : " + this.getCantidades()[i] + " unidades.");
+
+			System.out.println("-------------------------------------------");
+		}
+	}
+
+}

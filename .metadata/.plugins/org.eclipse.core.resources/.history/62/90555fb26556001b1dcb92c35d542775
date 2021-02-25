@@ -1,0 +1,9 @@
+package ejercicios;
+
+public class Hamburgueseria {
+	
+	private String nombre;
+	private String[] menuBurguers;
+	
+
+}

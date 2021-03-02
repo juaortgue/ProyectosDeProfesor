@@ -128,4 +128,23 @@ public class Cliente {
 
 	}
 
+	public void aumentarSaldo(Double s) {
+		if (s > 0) {
+			this.setSaldo(this.getSaldo() + s);
+			System.out.println("Ingresando saldo.....");
+		} else {
+			System.out.println("El saldo es negaito, no venga a robar.");
+		}
+	}
+	
+	public void disminuirSaldo(double s) {
+		if (this.getSaldo()-s >= 0) {
+			this.setSaldo(this.getSaldo() - s);
+			System.out.println("Retirando saldo.....");
+		} else {
+			System.out.println("El saldo es negativo, no venga a robar.");
+		}
+	}
+	
+
 }

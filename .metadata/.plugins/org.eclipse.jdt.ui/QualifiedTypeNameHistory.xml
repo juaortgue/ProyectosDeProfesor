@@ -11,4 +11,11 @@
     <fullyQualifiedTypeName name="modelos.Triangulo"/>
     <fullyQualifiedTypeName name="modelos.Rombo"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="model.Movil"/>
+    <fullyQualifiedTypeName name="jdk.internal.logger.BootstrapLogger"/>
+    <fullyQualifiedTypeName name="model.CNuevo"/>
+    <fullyQualifiedTypeName name="model.COcasion"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="model.Cliente"/>
 </qualifiedTypeNameHistroy>

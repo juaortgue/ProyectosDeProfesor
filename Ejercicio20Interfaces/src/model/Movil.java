@@ -26,6 +26,8 @@ public class Movil implements ITelefono {
 		return result;
 	}
 
+	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -34,11 +36,11 @@ public class Movil implements ITelefono {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Fijo other = (Fijo) obj;
+		Movil other = (Movil) obj;
 		if (numero == null) {
-			if (other.getNumero() != null)
+			if (other.numero != null)
 				return false;
-		} else if (!numero.equals(other.getNumero()))
+		} else if (!numero.equals(other.numero))
 			return false;
 		return true;
 	}

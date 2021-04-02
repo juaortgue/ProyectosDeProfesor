@@ -10,17 +10,21 @@
     <fullyQualifiedTypeName name="modelos.Figura"/>
     <fullyQualifiedTypeName name="modelos.Triangulo"/>
     <fullyQualifiedTypeName name="modelos.Rombo"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="model.Movil"/>
     <fullyQualifiedTypeName name="jdk.internal.logger.BootstrapLogger"/>
     <fullyQualifiedTypeName name="model.CNuevo"/>
     <fullyQualifiedTypeName name="model.COcasion"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="model.Cliente"/>
     <fullyQualifiedTypeName name="model.AparatoElectrico"/>
     <fullyQualifiedTypeName name="interfaces.IPublicacion"/>
     <fullyQualifiedTypeName name="interfaces.IPrestable"/>
     <fullyQualifiedTypeName name="interfaces.IConsultable"/>
     <fullyQualifiedTypeName name="model.Libro"/>
+    <fullyQualifiedTypeName name="fp.utiles.Color"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="fp.utiles.CocheValidador"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

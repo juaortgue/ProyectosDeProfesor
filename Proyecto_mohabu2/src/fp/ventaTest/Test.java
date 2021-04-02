@@ -3,7 +3,9 @@ package fp.ventaTest;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import fp.utiles.Color;
 import fp.ventaCoches.Coche;
@@ -69,7 +71,45 @@ public class Test {
 		Collections.sort(ls);
 		System.out.println("Lista orden natural: ");
 		System.out.println(ls);
-
+		
+		//BORRAR SON EJEMPLOS
+		for (int i = 0; i < ls.size(); i++) {
+			System.out.println("Elemento "+i +"--> "+ls.get(i));
+		}
+		for(Coche c: ls) {
+			System.out.println(c);
+		}
+		ls.set(0,  new Coche("BMW tuneado", "300", 100000.300, 100.0, LocalDate.now(), Color.BLANCO));
+		System.out.println(ls.get(0));
+		
+		System.out.println(ls.contains(c7));
+		System.out.println("Indice de c7 = "+ ls.indexOf(c7));
+		ls.remove(0);
+		System.out.println(ls);
+		ls.remove(c8);
+		
+		System.out.println("¿Esta vacía mi lista? "+ls.isEmpty());
+		ls.clear();
+		System.out.println("¿Y ahora esta vacia? "+ls.isEmpty());
+		
+		
+		//conjuntos que a diferencia de listas no pueden repetirse objetos
+		System.out.println("\n\nPRACTICANDO CON CONJUNTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
+		Set<Integer> set = new HashSet<>();
+		set.add(1);
+		set.add(2);
+		set.add(0);
+		//conjuntos NO TIENEN INDICE NO ESTAN EN UNA POSICION EN CONCRETO, LA UNICA FORMA DE RECORRERLOS ES CON EL 
+		//FOR EXTENDIDO
+		for(Integer n: set) {
+			System.out.println(n);
+		}
+		set.stream().forEach(x->System.out.println(x));
+		set.size();
+		
+		set.remove(1);
+		set.isEmpty();
+		set.clear();
 	}
 
 }

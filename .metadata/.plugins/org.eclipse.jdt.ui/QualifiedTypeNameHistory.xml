@@ -28,4 +28,16 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="model.Personal_Shopper"/>
+    <fullyQualifiedTypeName name="logic.LogPersonalS"/>
+    <fullyQualifiedTypeName name="logic.LogEstilo"/>
+    <fullyQualifiedTypeName name="logic.LogCliente"/>
+    <fullyQualifiedTypeName name="logic.LogLineaFactura"/>
+    <fullyQualifiedTypeName name="model.Factura"/>
+    <fullyQualifiedTypeName name="logic.LogProducto"/>
+    <fullyQualifiedTypeName name="controller.ControllerProducto"/>
+    <fullyQualifiedTypeName name="controller.ControllerCliente"/>
+    <fullyQualifiedTypeName name="model.Producto"/>
+    <fullyQualifiedTypeName name="model.Linea_Factura"/>
 </qualifiedTypeNameHistroy>
